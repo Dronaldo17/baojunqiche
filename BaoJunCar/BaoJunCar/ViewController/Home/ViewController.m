@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "PlayVideoController.h"
+#import "ExperienceVC.h"
 
 @interface ViewController ()
 
@@ -37,5 +38,14 @@
     UINavigationController * nav =[[UINavigationController alloc] initWithRootViewController:controller];
     nav.modalPresentationStyle =UIModalPresentationFullScreen;
     [self presentViewController:nav animated:NO completion:nil];
+}
+-(IBAction)experiencrButton:(id)sender
+{
+    UIStoryboard *stryBoard=[UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    ExperienceVC  *controller = [stryBoard instantiateViewControllerWithIdentifier:@"ExperienceVCID"];
+    UINavigationController * nav =[[UINavigationController alloc] initWithRootViewController:controller];
+    nav.modalPresentationStyle =UIModalPresentationFullScreen;
+    [self presentViewController:nav animated:NO completion:nil];
+
 }
 @end

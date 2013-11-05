@@ -55,6 +55,9 @@
                                         <state key="normal" title="车型展示">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="experiencrButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fe5-rN-7kB"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="DIi-uS-8pE" userLabel="在线欣赏">
                                         <rect key="frame" x="695" y="19" width="124" height="39"/>
@@ -204,14 +207,24 @@
             </objects>
             <point key="canvasLocation" x="308" y="-1010"/>
         </scene>
+        <!--ExperienceVC-->
+        <scene sceneID="9lx-Tv-VUq">
+            <objects>
+                <viewController storyboardIdentifier="ExperienceVCID" id="VBr-2c-3lK" customClass="ExperienceVC" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MYV-cU-G7z">
+                        <rect key="frame" x="0.0" y="20" width="1024" height="748"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zm6-Fz-mNw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="308" y="43"/>
+        </scene>
     </scenes>
     <resources>
-        <image name="baojun_630" width="206" height="134"/>
-        <image name="baojun_630" width="206" height="134"/>
-        <image name="baojun_630" width="206" height="134"/>
-        <image name="baojun_630" width="206" height="134"/>
-        <image name="baojun_630" width="206" height="134"/>
-        <image name="baojun_630" width="206" height="134"/>
         <image name="baojun_630" width="206" height="134"/>
         <image name="baojun_home" width="1305" height="751"/>
         <image name="baojun_spark" width="191" height="137"/>
