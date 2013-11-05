@@ -82,8 +82,12 @@
                         [UIImage imageNamed:@"ipadcover_9.jpg"]];
 	}
 	
-    
-    
+    self.title = @"车型展示";
+    UIButton * backButton = [NavButton createPopButtonWithImage:@"baojun_630"];
+    [backButton addTarget:self action:@selector(backClicked:) forControlEvents:UIControlEventTouchUpInside];
+    UIBarButtonItem * barButton = [[UIBarButtonItem alloc] initWithCustomView:backButton];
+    self.navigationItem.leftBarButtonItem = barButton;
+
 	[self.coverflow reloadData];
 	[self.coverflow setCurrentCoverAtIndex:9 animated:NO];
     
@@ -173,6 +177,11 @@
 
 - (void) coverflowView:(TKCoverflowView*)coverflowView coverAtIndexWasBroughtToFront:(NSInteger)index{
 	NSLog(@"Cover at index %d was brought to front",index);
+}
+
+-(void)backClicked:(id)sender
+{
+    [self dismissViewControllerAnimated:NO completion:nil];
 }
 
 @end
