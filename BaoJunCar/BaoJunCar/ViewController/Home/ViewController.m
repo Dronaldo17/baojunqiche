@@ -36,6 +36,7 @@
     UIStoryboard *stryBoard=[UIStoryboard storyboardWithName:@"Main" bundle:nil];
     PlayVideoController *controller = [stryBoard instantiateViewControllerWithIdentifier:@"PrsentOnlieVideoID"];
     UINavigationController * nav =[[UINavigationController alloc] initWithRootViewController:controller];
+    nav.navigationBar.barStyle = UIBarStyleBlack;
     nav.modalPresentationStyle =UIModalPresentationFullScreen;
     [self presentViewController:nav animated:NO completion:nil];
 }

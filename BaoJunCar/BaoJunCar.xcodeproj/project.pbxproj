@@ -94,6 +94,7 @@
 		95AF7CA518234861005B56DD /* PlayVideoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95AF7CA318234861005B56DD /* PlayVideoController.m */; };
 		95AF7CA918234CCD005B56DD /* NavButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 95AF7CA818234CCD005B56DD /* NavButton.m */; };
 		95AF7CAD18238602005B56DD /* BrandViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95AF7CAC18238602005B56DD /* BrandViewController.m */; };
+		95EC168E1829EBA8007459C7 /* BrowseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95EC168D1829EBA8007459C7 /* BrowseViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -258,6 +259,8 @@
 		95AF7CA818234CCD005B56DD /* NavButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavButton.m; sourceTree = "<group>"; };
 		95AF7CAB18238602005B56DD /* BrandViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BrandViewController.h; sourceTree = "<group>"; };
 		95AF7CAC18238602005B56DD /* BrandViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BrandViewController.m; sourceTree = "<group>"; };
+		95EC168C1829EBA8007459C7 /* BrowseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BrowseViewController.h; sourceTree = "<group>"; };
+		95EC168D1829EBA8007459C7 /* BrowseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BrowseViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -485,6 +488,8 @@
 			children = (
 				9592826A1828D32700E497CA /* ExperienceVC.h */,
 				9592826B1828D32700E497CA /* ExperienceVC.m */,
+				95EC168C1829EBA8007459C7 /* BrowseViewController.h */,
+				95EC168D1829EBA8007459C7 /* BrowseViewController.m */,
 			);
 			path = Experience;
 			sourceTree = "<group>";
@@ -651,6 +656,7 @@
 				959282621828CEC900E497CA /* UIImageView+TKCategory.m in Sources */,
 				9592822F1828CEC900E497CA /* TKAlertCenter.m in Sources */,
 				959282561828CEC900E497CA /* TKWebViewController.m in Sources */,
+				95EC168E1829EBA8007459C7 /* BrowseViewController.m in Sources */,
 				959282431828CEC900E497CA /* TKLabelTextFieldCell.m in Sources */,
 				9592824E1828CEC900E497CA /* TKSlideToUnlockView.m in Sources */,
 				959282651828CEC900E497CA /* UITextField+TKCategory.m in Sources */,

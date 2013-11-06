@@ -87,6 +87,7 @@
                     <connections>
                         <segue destination="ann-9b-LD5" kind="modal" identifier="PrsentOnlieVideo" id="Olq-tB-Lyc"/>
                         <segue destination="sZc-xg-m0K" kind="modal" identifier="BrandViewControllerID" id="H4a-AZ-ttq"/>
+                        <segue destination="VBr-2c-3lK" kind="modal" identifier="ExperienceVC" id="BqH-8A-mfb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -172,7 +173,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="M2c-y6-EOn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="522" y="2037"/>
+            <point key="canvasLocation" x="254" y="1917"/>
         </scene>
         <!--BrandViewController-->
         <scene sceneID="blU-xT-8VL">
@@ -200,7 +201,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
-                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" translucent="NO" prompted="NO"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MJA-De-ezn" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -212,16 +213,35 @@
             <objects>
                 <viewController storyboardIdentifier="ExperienceVCID" id="VBr-2c-3lK" customClass="ExperienceVC" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="MYV-cU-G7z">
-                        <rect key="frame" x="0.0" y="20" width="1024" height="748"/>
+                        <rect key="frame" x="0.0" y="64" width="1024" height="704"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
+                    <navigationItem key="navigationItem" id="KIb-qh-MVI"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" translucent="NO" prompted="NO"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zm6-Fz-mNw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="308" y="43"/>
+            <point key="canvasLocation" x="316" y="123"/>
+        </scene>
+        <!--Browse View Controller-->
+        <scene sceneID="sWm-GB-8UB">
+            <objects>
+                <viewController storyboardIdentifier="BrowseViewControllerID" id="ibI-SL-YKI" customClass="BrowseViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RI8-fu-cB6">
+                        <rect key="frame" x="0.0" y="64" width="1024" height="704"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" translucent="NO" prompted="NO"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tgP-fk-prl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1678" y="123"/>
         </scene>
     </scenes>
     <resources>

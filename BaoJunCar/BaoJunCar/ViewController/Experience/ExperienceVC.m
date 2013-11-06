@@ -7,6 +7,7 @@
 //
 
 #import "ExperienceVC.h"
+#import "BrowseViewController.h"
 
 
 @implementation ExperienceVC
@@ -39,18 +40,18 @@
 	self.coverflow.coverflowDataSource = self;
 	self.coverflow.tag = 0;
 	if([UIDevice currentDevice].userInterfaceIdiom == UIUserInterfaceIdiomPad){
-		self.coverflow.coverSize = CGSizeMake(300, 300);
+		self.coverflow.coverSize = CGSizeMake(500, 400);
 	}
 	
 	[self.view addSubview:self.coverflow];
 	
     
-	CGSize s = self.view.bounds.size;
-	
-	UIButton *infoButton = [UIButton buttonWithType:UIButtonTypeInfoLight];
-	[infoButton addTarget:self action:@selector(info) forControlEvents:UIControlEventTouchUpInside];
-	infoButton.frame = CGRectMake(s.width-50, 5, 50, 30);
-	[self.view addSubview:infoButton];
+//	CGSize s = self.view.bounds.size;
+//	
+//	UIButton *infoButton = [UIButton buttonWithType:UIButtonTypeInfoLight];
+//	[infoButton addTarget:self action:@selector(info) forControlEvents:UIControlEventTouchUpInside];
+//	infoButton.frame = CGRectMake(s.width-50, 5, 50, 30);
+//	[self.view addSubview:infoButton];
 	
 	
 	UIView *center = [[UIView alloc] initWithFrame:CGRectMake(self.view.bounds.size.width/2.0, 0,1, 1000)];
@@ -62,9 +63,7 @@
 	UIBarButtonItem *item = [[UIBarButtonItem alloc] initWithTitle:@"Tap Me" style:UIBarButtonItemStyleBordered target:self action:@selector(info)];
 	self.toolbarItems = @[item];
     
-	
-    
-	
+    self.navigationController.navigationBar.barStyle = UIBarStyleBlack;
 }
 - (void) viewDidLoad {
     [super viewDidLoad];
@@ -89,7 +88,7 @@
     self.navigationItem.leftBarButtonItem = barButton;
 
 	[self.coverflow reloadData];
-	[self.coverflow setCurrentCoverAtIndex:9 animated:NO];
+	[self.coverflow setCurrentCoverAtIndex:4 animated:NO];
     
 }
 - (void) viewWillAppear:(BOOL)animated{
@@ -159,7 +158,7 @@
 }
 
 - (NSInteger) numberOfCoversInCoverflowView:(TKCoverflowView *)coverflowView{
-	return 20;
+	return self.covers.count;
 }
 - (TKCoverflowCoverView *) coverflowView:(TKCoverflowView *)coverflowView coverForIndex:(NSInteger)index{
 	
@@ -178,7 +177,20 @@
 - (void) coverflowView:(TKCoverflowView*)coverflowView coverAtIndexWasBroughtToFront:(NSInteger)index{
 	NSLog(@"Cover at index %d was brought to front",index);
 }
+- (void) coverflowView:(TKCoverflowView*)coverflowView coverAtIndexWasTappedInFront:(NSInteger)index tapCount:(NSInteger)tapCount
+{
+    NSLog(@"Cover WasTapped index %d was brought to front",index);
+    
+    
+    UIStoryboard *stryBoard=[UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    BrowseViewController *controller = [stryBoard instantiateViewControllerWithIdentifier:@"BrowseViewControllerID"];
+    controller.image = self.covers[index];
+    UINavigationController * nav =[[UINavigationController alloc] initWithRootViewController:controller];
+    nav.navigationBar.barStyle = UIBarStyleBlack;
+    nav.modalPresentationStyle =UIModalPresentationFormSheet;
+    [self presentViewController:nav animated:NO completion:nil];
 
+}
 -(void)backClicked:(id)sender
 {
     [self dismissViewControllerAnimated:NO completion:nil];
