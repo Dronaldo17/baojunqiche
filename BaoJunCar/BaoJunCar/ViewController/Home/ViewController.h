@@ -11,4 +11,6 @@
 @interface ViewController : UIViewController
 -(IBAction)videoButton:(id)sender;
 -(IBAction)experiencrButton:(id)sender;
+-(IBAction)brandButton:(id)sender;
+-(IBAction)car630Cilcked:(id)sender;
 @end

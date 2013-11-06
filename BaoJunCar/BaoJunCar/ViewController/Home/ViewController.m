@@ -9,6 +9,8 @@
 #import "ViewController.h"
 #import "PlayVideoController.h"
 #import "ExperienceVC.h"
+#import "BrandViewController.h"
+#import "CarViewController.h"
 
 @interface ViewController ()
 
@@ -45,8 +47,26 @@
     UIStoryboard *stryBoard=[UIStoryboard storyboardWithName:@"Main" bundle:nil];
     ExperienceVC  *controller = [stryBoard instantiateViewControllerWithIdentifier:@"ExperienceVCID"];
     UINavigationController * nav =[[UINavigationController alloc] initWithRootViewController:controller];
+    nav.navigationBar.barStyle = UIBarStyleBlack;
     nav.modalPresentationStyle =UIModalPresentationFullScreen;
     [self presentViewController:nav animated:NO completion:nil];
-
+}
+-(IBAction)brandButton:(id)sender
+{
+    UIStoryboard *stryBoard=[UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    BrandViewController  *controller = [stryBoard instantiateViewControllerWithIdentifier:@"BrandViewControllerID"];
+    UINavigationController * nav =[[UINavigationController alloc] initWithRootViewController:controller];
+    nav.navigationBar.barStyle = UIBarStyleBlack;
+    nav.modalPresentationStyle =UIModalPresentationFullScreen;
+    [self presentViewController:nav animated:NO completion:nil];
+}
+-(IBAction)car630Cilcked:(id)sender
+{
+    UIStoryboard *stryBoard=[UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    CarViewController  *controller = [stryBoard instantiateViewControllerWithIdentifier:@"CarViewControllerID"];
+    UINavigationController * nav =[[UINavigationController alloc] initWithRootViewController:controller];
+    nav.navigationBar.barStyle = UIBarStyleBlack;
+    nav.modalPresentationStyle =UIModalPresentationFullScreen;
+    [self presentViewController:nav animated:NO completion:nil];
 }
 @end

@@ -9,5 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface BrandViewController : UIViewController
-
+@property (nonatomic,strong)IBOutlet UIImageView * imageView;
+@property (nonatomic,strong)IBOutlet UIScrollView * scrollView;
+@property (nonatomic,strong)IBOutlet UISegmentedControl * segController;
+-(IBAction)segControllerClicked:(id)sender;
 @end
