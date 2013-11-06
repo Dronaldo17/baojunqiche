@@ -11,6 +11,7 @@
 #import "ExperienceVC.h"
 #import "BrandViewController.h"
 #import "CarViewController.h"
+#import "PriceViewController.h"
 
 @interface ViewController ()
 
@@ -64,6 +65,15 @@
 {
     UIStoryboard *stryBoard=[UIStoryboard storyboardWithName:@"Main" bundle:nil];
     CarViewController  *controller = [stryBoard instantiateViewControllerWithIdentifier:@"CarViewControllerID"];
+    UINavigationController * nav =[[UINavigationController alloc] initWithRootViewController:controller];
+    nav.navigationBar.barStyle = UIBarStyleBlack;
+    nav.modalPresentationStyle =UIModalPresentationFullScreen;
+    [self presentViewController:nav animated:NO completion:nil];
+}
+-(IBAction)priceCilcked:(id)sender
+{
+    UIStoryboard *stryBoard=[UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    PriceViewController  *controller = [stryBoard instantiateViewControllerWithIdentifier:@"PriceViewControllerID"];
     UINavigationController * nav =[[UINavigationController alloc] initWithRootViewController:controller];
     nav.navigationBar.barStyle = UIBarStyleBlack;
     nav.modalPresentationStyle =UIModalPresentationFullScreen;

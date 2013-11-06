@@ -74,6 +74,9 @@
                                         <state key="normal" title="配置价格">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="priceCilcked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="O8C-F2-5z2"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="DIi-uS-8pE" userLabel="在线欣赏">
                                         <rect key="frame" x="748" y="20" width="124" height="39"/>
@@ -106,6 +109,7 @@
                         <segue destination="sZc-xg-m0K" kind="modal" identifier="BrandViewControllerID" id="H4a-AZ-ttq"/>
                         <segue destination="VBr-2c-3lK" kind="modal" identifier="ExperienceVC" id="BqH-8A-mfb"/>
                         <segue destination="GIn-z0-ViD" kind="modal" identifier="CarViewControllerID" id="Y5X-GY-dz1"/>
+                        <segue destination="9Rg-HX-wkf" kind="modal" identifier="PriceViewControllerID" id="n7g-IT-gBO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -191,7 +195,24 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="M2c-y6-EOn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="410" y="2745"/>
+            <point key="canvasLocation" x="386" y="3325"/>
+        </scene>
+        <!--Sale View Controller-->
+        <scene sceneID="87X-oM-WHJ">
+            <objects>
+                <viewController storyboardIdentifier="SaleViewControllerID" useStoryboardIdentifierAsRestorationIdentifier="YES" id="gYT-ON-evO" customClass="SaleViewController" sceneMemberID="viewController">
+                    <webView key="view" contentMode="scaleToFill" id="JgO-N3-kaf">
+                        <rect key="frame" x="0.0" y="64" width="1024" height="704"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </webView>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" translucent="NO" prompted="NO"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8e4-7x-Bih" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="386" y="4295"/>
         </scene>
         <!--BrandViewController-->
         <scene sceneID="blU-xT-8VL">
@@ -355,6 +376,43 @@
             </objects>
             <point key="canvasLocation" x="368" y="1185"/>
         </scene>
+        <!--Price View Controller-->
+        <scene sceneID="Xl6-W9-jrr">
+            <objects>
+                <viewController storyboardIdentifier="PriceViewControllerID" useStoryboardIdentifierAsRestorationIdentifier="YES" id="9Rg-HX-wkf" customClass="PriceViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3il-U7-E99">
+                        <rect key="frame" x="0.0" y="64" width="1024" height="704"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bordered" selectedSegmentIndex="0" id="zDC-2O-wez">
+                                <rect key="frame" x="291" y="58" width="390" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="1.5L"/>
+                                    <segment title="1.8L"/>
+                                </segments>
+                                <connections>
+                                    <action selector="segControllerClicked:" destination="9Rg-HX-wkf" eventType="valueChanged" id="Fpk-vc-cHY"/>
+                                </connections>
+                            </segmentedControl>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="asZ-MI-9Hc">
+                                <rect key="frame" x="39" y="133" width="914" height="551"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" translucent="NO" prompted="NO"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="imageView" destination="asZ-MI-9Hc" id="tIM-81-x6f"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YQu-ns-HXG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="386" y="2231"/>
+        </scene>
         <!--Browse View Controller-->
         <scene sceneID="sWm-GB-8UB">
             <objects>
@@ -374,12 +432,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="baojun_630" width="206" height="134"/>
-        <image name="baojun_630" width="206" height="134"/>
-        <image name="baojun_630" width="206" height="134"/>
-        <image name="baojun_630" width="206" height="134"/>
-        <image name="baojun_630" width="206" height="134"/>
-        <image name="baojun_630" width="206" height="134"/>
         <image name="baojun_630" width="206" height="134"/>
         <image name="baojun_home" width="1305" height="751"/>
         <image name="baojun_spark" width="191" height="137"/>

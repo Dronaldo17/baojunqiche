@@ -107,6 +107,10 @@
 		95EC16C4182A314C007459C7 /* 630_6.png in Resources */ = {isa = PBXBuildFile; fileRef = 95EC16BD182A314C007459C7 /* 630_6.png */; };
 		95EC16C5182A314C007459C7 /* 630_7.png in Resources */ = {isa = PBXBuildFile; fileRef = 95EC16BE182A314C007459C7 /* 630_7.png */; };
 		95EC16CC182A319A007459C7 /* CarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95EC16CB182A319A007459C7 /* CarViewController.m */; };
+		95EC16D0182A42A2007459C7 /* PriceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95EC16CF182A42A2007459C7 /* PriceViewController.m */; };
+		95EC16D8182A45B9007459C7 /* 630_15.png in Resources */ = {isa = PBXBuildFile; fileRef = 95EC16D6182A45B9007459C7 /* 630_15.png */; };
+		95EC16D9182A45B9007459C7 /* 630_18.png in Resources */ = {isa = PBXBuildFile; fileRef = 95EC16D7182A45B9007459C7 /* 630_18.png */; };
+		95EC16DD182A463A007459C7 /* SaleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95EC16DC182A463A007459C7 /* SaleViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -286,6 +290,12 @@
 		95EC16BE182A314C007459C7 /* 630_7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 630_7.png; sourceTree = "<group>"; };
 		95EC16CA182A319A007459C7 /* CarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CarViewController.h; sourceTree = "<group>"; };
 		95EC16CB182A319A007459C7 /* CarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CarViewController.m; sourceTree = "<group>"; };
+		95EC16CE182A42A2007459C7 /* PriceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PriceViewController.h; sourceTree = "<group>"; };
+		95EC16CF182A42A2007459C7 /* PriceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PriceViewController.m; sourceTree = "<group>"; };
+		95EC16D6182A45B9007459C7 /* 630_15.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 630_15.png; sourceTree = "<group>"; };
+		95EC16D7182A45B9007459C7 /* 630_18.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 630_18.png; sourceTree = "<group>"; };
+		95EC16DB182A463A007459C7 /* SaleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SaleViewController.h; sourceTree = "<group>"; };
+		95EC16DC182A463A007459C7 /* SaleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SaleViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -522,6 +532,7 @@
 		95AF7C5618222CC1005B56DD /* res */ = {
 			isa = PBXGroup;
 			children = (
+				95EC16D1182A449A007459C7 /* price */,
 				95EC16B7182A314C007459C7 /* car */,
 				95EC16AE182A2BEE007459C7 /* brand */,
 				95AF7C5718222CC1005B56DD /* video.mp4 */,
@@ -532,6 +543,8 @@
 		95AF7C9D18234861005B56DD /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				95EC16DA182A4630007459C7 /* Sale */,
+				95EC16CD182A428C007459C7 /* Price */,
 				95EC16C9182A318D007459C7 /* Car */,
 				959282691828D04100E497CA /* Experience */,
 				95AF7CAA182382E8005B56DD /* Brand */,
@@ -614,6 +627,33 @@
 			path = Car;
 			sourceTree = "<group>";
 		};
+		95EC16CD182A428C007459C7 /* Price */ = {
+			isa = PBXGroup;
+			children = (
+				95EC16CE182A42A2007459C7 /* PriceViewController.h */,
+				95EC16CF182A42A2007459C7 /* PriceViewController.m */,
+			);
+			path = Price;
+			sourceTree = "<group>";
+		};
+		95EC16D1182A449A007459C7 /* price */ = {
+			isa = PBXGroup;
+			children = (
+				95EC16D6182A45B9007459C7 /* 630_15.png */,
+				95EC16D7182A45B9007459C7 /* 630_18.png */,
+			);
+			path = price;
+			sourceTree = "<group>";
+		};
+		95EC16DA182A4630007459C7 /* Sale */ = {
+			isa = PBXGroup;
+			children = (
+				95EC16DB182A463A007459C7 /* SaleViewController.h */,
+				95EC16DC182A463A007459C7 /* SaleViewController.m */,
+			);
+			path = Sale;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -668,6 +708,7 @@
 			files = (
 				95EC16B6182A2BEE007459C7 /* brand-4.png in Resources */,
 				959282241828CEC900E497CA /* ipadcover_5.jpg in Resources */,
+				95EC16D8182A45B9007459C7 /* 630_15.png in Resources */,
 				959282261828CEC900E497CA /* ipadcover_7.jpg in Resources */,
 				959282211828CEC900E497CA /* ipadcover_2.jpg in Resources */,
 				959282251828CEC900E497CA /* ipadcover_6.jpg in Resources */,
@@ -689,6 +730,7 @@
 				95AF7C5818222CC1005B56DD /* video.mp4 in Resources */,
 				959282231828CEC900E497CA /* ipadcover_4.jpg in Resources */,
 				95AF7C9C18234684005B56DD /* Main.storyboard in Resources */,
+				95EC16D9182A45B9007459C7 /* 630_18.png in Resources */,
 				95EC16C1182A314C007459C7 /* 630_3.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -732,6 +774,7 @@
 				95EC168E1829EBA8007459C7 /* BrowseViewController.m in Sources */,
 				959282431828CEC900E497CA /* TKLabelTextFieldCell.m in Sources */,
 				9592824E1828CEC900E497CA /* TKSlideToUnlockView.m in Sources */,
+				95EC16D0182A42A2007459C7 /* PriceViewController.m in Sources */,
 				959282651828CEC900E497CA /* UITextField+TKCategory.m in Sources */,
 				9592823F1828CEC900E497CA /* TKKeyboardTableViewController.m in Sources */,
 				959282301828CEC900E497CA /* TKAppDelegate.m in Sources */,
@@ -744,6 +787,7 @@
 				959282371828CEC900E497CA /* TKCalendarMonthViewController.m in Sources */,
 				959282451828CEC900E497CA /* TKLoadingView.m in Sources */,
 				9592824D1828CEC900E497CA /* TKShimmerLabel.m in Sources */,
+				95EC16DD182A463A007459C7 /* SaleViewController.m in Sources */,
 				9592825B1828CEC900E497CA /* UIButton+TKCategory.m in Sources */,
 				959282381828CEC900E497CA /* TKCoverflowView.m in Sources */,
 				9592822C1828CEC900E497CA /* NSMutableArray+TKCategory.m in Sources */,
